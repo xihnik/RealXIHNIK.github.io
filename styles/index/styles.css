@@ -1,0 +1,153 @@
+body {
+    background-color: rgb(0, 0, 0);
+
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-style: double;
+}
+
+.btn_StartNow{
+    color                : #ffffff;
+    background-color     : #131313;
+    text-align           : center;
+    white-space          : nowrap;
+    overflow             : hidden;
+    border               : 0px solid #338fff;
+    border-radius        : 200px;
+    border-color         : #338fff;
+    padding              : 20px;
+    width                : 100%;
+    height               : 100%;
+    max-width            : 150px;
+    max-height           : 10px;
+    cursor               : pointer;
+    font-weight          : bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select  : none;
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
+    box-shadow: 0px -2px tomato;
+    text-shadow:-1px -1px rgb(32, 32, 32);
+
+    min-width: 150px;
+    min-height: 10px;
+    max-width: 20%;
+    max-height: 5%;
+
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    z-index: 2;
+}
+
+.btn_StartNow:hover{
+box-shadow: inset 0 0 0 1px #53ea93;
+color: tomato;
+}
+
+.btn_Record{
+    color                : #ffffff;
+    background-color     : #131313;
+    text-align           : center;
+    white-space          : nowrap;
+    overflow             : hidden;
+    border               : 0px solid #338fff;
+    border-radius        : 200px;
+    border-color         : #338fff;
+    padding              : 20px;
+    width                : 100%;
+    height               : 100%;
+    max-width            : 150px;
+    max-height           : 10px;
+    cursor               : pointer;
+    font-weight          : bold;
+    -webkit-touch-callout: none;
+    -webkit-user-select  : none;
+    -khtml-user-select   : none;
+    -moz-user-select     : none;
+    -ms-user-select      : none;
+    user-select          : none;
+    box-shadow: 0px -2px tomato;
+    text-shadow:-1px -1px rgb(32, 32, 32);
+
+    min-width: 150px;
+    min-height: 10px;
+    max-width: 20%;
+    max-height: 5%;
+
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+
+    z-index: 2;
+}
+
+.btn_Record:hover{
+box-shadow: inset 0 0 0 1px #53ea93;
+color: tomato;
+}
+
+.block{
+    border          : 30px solid #131313;
+    border-radius   : 10px;
+    color           : #131313;
+    background-color: #131313;
+    width           : 35%;
+    display         : table;
+    margin-top: 25px;
+    margin-left     : auto;
+    margin-right    : 0%;
+    max-width       : 230;
+    border-radius   : 30px;
+    box-shadow      : 2px -2px tomato;
+
+    min-width: 230px;
+    /* background-size: 110%; */
+}
+
+.lbl_MainMenu{
+    color: rgb(204, 201, 201);
+    background: transparent;
+    margin-left: 0px;
+    font-size: larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lbl_MainMenu:hover{
+    color: tomato;
+}
+
+.lbl_Info{
+    color: rgb(204, 201, 201);
+    background: transparent;
+    margin-left: 50px;
+    font-size: larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+    
+    cursor: pointer;
+    text-decoration: none;
+}
+.lbl_Info:hover{
+    color: tomato;
+}
+
+
+

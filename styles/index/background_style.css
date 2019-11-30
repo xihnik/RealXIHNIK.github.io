@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+.circle{
+height       : 50px;
+width        : 50px;
+border-radius: 50%;
+position     : absolute;
+z-index      : -1;
+}
+#circle_1{
+    
+    background-color: #53ea93;
+    margin-left     : 0%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #53ea93;
+}
+
+#circle_2{
+    background-color: #eac253;
+    margin-left     : 10%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #eac253;
+}
+
+#circle_3{
+    background-color: #5388ea;
+    margin-left     : 20%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #5388ea;
+}
+
+#circle_4{
+    background-color: #ea5360;
+    margin-left     : 50%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #ea5360;
+}
+
+#circle_5{
+    background-color: #cc53ea;
+    margin-left     : 40%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #cc53ea;
+}
+
+#circle_6{
+    background-color: #ead353;
+    margin-left     : 45%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #ead353;
+}
+
+#circle_7{
+    background-color: #d69264;
+    margin-left     : 50%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #d69264;
+}
+
+#circle_8{
+    background-color: #5376ea;
+    margin-left     : 30%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #5376ea;
+}
+
+#circle_9{
+    background-color: #6ccc3f;
+    margin-left     : 70%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #6ccc3f;
+}
+
+#circle_10{
+    background-color: #ea7153;
+    margin-left     : 30%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #ea7153;
+}
+
+#circle_11{
+    background-color: #ea6053;
+    margin-left     : 80%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #ea6053;
+}
+
+#circle_12:inherit{
+    background-color: #ffffff;
+    margin-left     : 75%;
+    margin-top      : 0%;
+    box-shadow      : 1px 2px #ffffff;
+}
+
+.circle:hover{
+    transition:5s;
+   transform        : translate(350px,0);
+    -webkit-transform: translate(350px,0);  /** Chrome & Safari **/
+    -o-transform     : translate(350px,0);  /** Opera **/
+    -moz-transform   : translate(350px,0);  /** Firefox **/
+}
+
+#circle_1:hover.move-right{
+    transform        : translate(350px,0);
+    -webkit-transform: translate(350px,0);  /** Chrome & Safari **/
+    -o-transform     : translate(350px,0);  /** Opera **/
+    -moz-transform   : translate(350px,0);  /** Firefox **/
+}

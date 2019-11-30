@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+
+    border-left-width: 20px;
+    border-right-width: 20px;
+    border-style: double;
+
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+}
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-width:1px 1px 1px 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    border-width: 1px 1px 1px 2px;
+    border-color: rgb(0, 0, 0);
+    background-color: #777;
+}
+
+::-webkit-scrollbar-track{
+    border-width:0;
+}
+
+::-webkit-scrollbar-track:hover{
+    border-left: solid 1px #aaa;
+    background-color: #eee;
+}
+
+.lbl_MainMenu{
+    color: rgb(204, 201, 201);
+    background: transparent;
+    margin-left: 0px;
+    font-size: larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.lbl_MainMenu:hover{
+    color: tomato;
+}
+
+.lbl_Info{
+    color: rgb(204, 201, 201);
+    background: transparent;
+    margin-left: 50px;
+    font-size: larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+    
+    cursor: pointer;
+    text-decoration: none;
+}
+.lbl_Info:hover{
+    color: tomato;
+}
+
+.block{
+    border          : 30px solid #131313;
+    border-radius   : 10px;
+    color           : #131313;
+    background-color: #131313;
+    width           : 35%;
+    display         : table;
+    margin-top: 25px;
+    margin-left     : auto;
+    margin-right: 0%;
+    max-width       : 230;
+    border-radius   : 30px;
+    box-shadow      : 2px -2px tomato;
+
+    min-width: 230px;
+    /* background-size: 110%; */
+}
+
+#text{
+    color: #aaaaaa;
+    text-align-last: center;
+    font-size: x-large;
+    margin-top: 10%;
+}
+
+#text_descriptions{
+    color: #727272;
+    text-align-last: center;
+    font-size: 90%;
+    margin-top: 3%;
+}
+
+#face_enter
+{
+    margin-top: 3%;
+}
+
+.face{
+    width        : 20%;
+    border-radius: 100px;
+    box-shadow   : 0px 2px tomato;
+}
+#face_artur{
+
+}
+
+#face_mark{
+    margin-left: 10%;
+}
+
+
+#name_artur{
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow   : 0px 1px tomato;
+}
+
+#name_mark{
+    margin-left: 10%;
+    width: 20%;
+    text-align: left;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow   : 0px 1px tomato;
+}
