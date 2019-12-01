@@ -48,12 +48,14 @@ body {
         -ms-user-select      : none;
         user-select          : none;
 
+        font-size: 150%;
+
     cursor: pointer;
     text-decoration: none;
 }
 
 .lbl_MainMenu:hover{
-    color: tomato;
+    color: rgb(238, 238, 238);
 }
 
 .lbl_Info{
@@ -68,6 +70,11 @@ body {
         -moz-user-select     : none;
         -ms-user-select      : none;
         user-select          : none;
+
+
+        color: tomato;
+
+        font-size: 180%;
     
     cursor: pointer;
     text-decoration: none;
@@ -88,7 +95,7 @@ body {
     margin-right: auto;
     max-width       : 230;
     border-radius   : 30px;
-    box-shadow      : 2px -2px tomato;
+    box-shadow      : -2px -2px tomato;
 
     min-width: 230px;
 
@@ -215,7 +222,7 @@ body {
 
 .fog-container {
   position: absolute;
-  width: 99%;
+  width: 98.4%;
   height: 100%;
   overflow: hidden;
   z-index: -1;

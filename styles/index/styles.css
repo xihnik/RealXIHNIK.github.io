@@ -48,10 +48,12 @@ body {
     box-shadow: 0px -2px tomato;
     text-shadow:-1px -1px rgb(32, 32, 32);
 
-    min-width: 150px;
-    min-height: 10px;
-    max-width: 20%;
-    max-height: 15px;
+    font-size: 200%;
+
+    min-width: 20%;
+    min-height: 5%;
+    max-width: 80%;
+    max-height: 10%;
 
     margin-top: 10%;
     margin-left: auto;
@@ -90,10 +92,12 @@ color: tomato;
     box-shadow: 0px -2px tomato;
     text-shadow:-1px -1px rgb(32, 32, 32);
 
-    min-width: 150px;
-    min-height: 10px;
-    max-width: 20%;
-    max-height: 15px;
+    font-size: 200%;
+
+    min-width: 20%;
+    min-height: 5%;
+    max-width: 80%;
+    max-height: 10%;
 
     margin-top: 5%;
     margin-left: auto;
@@ -119,7 +123,7 @@ color: tomato;
     margin-right: auto;
     max-width       : 230;
     border-radius   : 30px;
-    box-shadow      : 2px -2px tomato;
+    box-shadow      : -2px -2px tomato;
 
     min-width: 230px;
 
@@ -141,12 +145,22 @@ color: tomato;
         -ms-user-select      : none;
         user-select          : none;
 
+
+        color: tomato;
+
+        font-size: 200%;
+
+
     cursor: pointer;
     text-decoration: none;
 }
 
-.lbl_MainMenu:hover{
+.lbl_MainMenu:hover + .Hide_Info{
     color: tomato;
+}
+
+.Hide_Info{
+    color: #131313;
 }
 
 .lbl_Info{
@@ -161,12 +175,19 @@ color: tomato;
         -moz-user-select     : none;
         -ms-user-select      : none;
         user-select          : none;
+
+        
+
+        font-size: 150%;
     
     cursor: pointer;
     text-decoration: none;
 }
 .lbl_Info:hover{
-    color: tomato;
+    color: rgb(238, 238, 238);
+}
+
+.Hide_Menu{
 }
 
 
