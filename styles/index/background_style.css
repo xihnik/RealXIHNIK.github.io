@@ -10,7 +10,7 @@ z-index      : -1;
 #circle_1{
     
     background-color: #53ea93;
-    margin-left     : 0%;
+    margin-left     : 1%;
     margin-top      : 0%;
     box-shadow      : 1px 2px #53ea93;
 }
@@ -31,7 +31,7 @@ z-index      : -1;
 
 #circle_4{
     background-color: #ea5360;
-    margin-left     : 50%;
+    margin-left     : 95%;
     margin-top      : 0%;
     box-shadow      : 1px 2px #ea5360;
 }

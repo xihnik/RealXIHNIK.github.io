@@ -123,13 +123,16 @@ color: tomato;
     width           : 35%;
     display         : table;
     margin-top: 25px;
-    margin-left     : auto;
-    margin-right    : 0%;
+    margin-right     : 0%;
+    margin-right: auto;
     max-width       : 230;
     border-radius   : 30px;
     box-shadow      : 2px -2px tomato;
 
     min-width: 230px;
+
+    max-width: 250px;
+    
     /* background-size: 110%; */
 }
 
