@@ -94,7 +94,7 @@ z-index      : -1;
 
 .circle:hover{
     transition:5s;
-   transform        : translate(350px,0);
+    transform        : translate(350px,0);
     -webkit-transform: translate(350px,0);  /** Chrome & Safari **/
     -o-transform     : translate(350px,0);  /** Opera **/
     -moz-transform   : translate(350px,0);  /** Firefox **/
