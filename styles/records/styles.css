@@ -74,7 +74,7 @@ body {
         user-select          : none;
 
 
-        color: tomato;
+        /* color: tomato; */
 
         font-size: 300%;
 
@@ -87,7 +87,7 @@ max-height: 10%;
     text-decoration: none;
 }
 .lbl_Info:hover{
-    color: tomato;
+    color: rgb(238, 238, 238);
 }
 
 .block{
@@ -280,6 +280,41 @@ max-width: 300px;
   100% {
     transform: translate3d(0, 0, 0);
   }
+}
+
+table {
+  border-collapse: collapse;
+  color: white;
+  margin: auto;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  /* display:  ; */
+
+  min-width: 60%;
+  max-width: 70%;
+  overflow: hidden;
+  /* align-content: ; */
+}
+
+table, th, td {
+  text-align: center;
+  border: 3px solid tomato;
+  
+}
+
+th {
+  background-color: tomato;
+  color: white;
+  font-weight: 1000;
+  font-size: 1.6em;
+}
+
+td{
+
+  font-size: 1.4em;
 }
 
 @keyframes show_faces {
