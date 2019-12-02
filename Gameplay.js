@@ -1,13 +1,13 @@
-import {Engine} from "./src/Scripts/Engine.js";
-import {Map} from "./src/Scripts/Map.js";
-import {Asteroid} from "./src/Scripts/Asteroid.js";
-import {Player} from "./src/Scripts/Player.js";
-import {Shoot} from "./src/Scripts/Shoot.js";
-import {GameStatistic} from "./src/Scripts/GameStatistic.js";
+import { Engine } from "./src/Scripts/Engine.js";
+import { Map } from "./src/Scripts/Map.js";
+import { Asteroid } from "./src/Scripts/Asteroid.js";
+import { Player } from "./src/Scripts/Player.js";
+import { Shoot } from "./src/Scripts/Shoot.js";
+import { GameStatistic } from "./src/Scripts/GameStatistic.js";
 
-var engine = new Engine('display','2d');
+var engine = new Engine('display', '2d');
 var map = new Map('src/Images/Background/background.jpg');
-var asteroid = new Asteroid('src/Images/Asteroid/stone.png',0,0);
+var asteroid = new Asteroid('src/Images/Asteroid/stone.png', 0, 0);
 var asteroidCollection = [];
 var shoot = new Shoot('src/Images/Person/shoot.png');
 var shootCollection = [];
@@ -15,35 +15,57 @@ var gameStatistic = new GameStatistic(3);
 
 
 
-var interval = setInterval(createMeteorit,500);
+var interval = setInterval(createMeteorit, 500);
 
 
-var player = new Player('src/Images/Person/person.png',400,450);
+var player = new Player('src/Images/Person/person.png', 400, 450);
 
-asteroidCollection[asteroidCollection.length] = new Asteroid('src/Images/Asteroid/stone.png',0,0);
+asteroidCollection[asteroidCollection.length] = new Asteroid('src/Images/Asteroid/stone.png', 0, 0);
 
-document.getElementById('display').addEventListener('mousemove',function (event) {
+// document.getElementById('display').addEventListener('mousemove',function (event) {
+//
+// player.x = event.offsetX;
+// player.y = event.offsetY;
+//
+// });
+
+document.getElementById('display').addEventListener('mousemove', function (event) {
 
     player.x = event.offsetX;
     player.y = event.offsetY;
 
 });
 
-// document.getElementById('display').addEventListener('mousedown',function (event) {
-//     // console.log(event.x)
+// let event = null;
 //
-//     player.x = event.offsetX;
-//     console.log('X:'+event.offsetX);
-//     console.log(event.offsetY);
-//     player.y = event.offsetY;
+// document.getElementById('display').addEventListener("touchstart", function (e) {
+// event = e;
 // });
+// //Костыльная(Переделать)
+// document.getElementById('display').addEventListener("touchmove", function (e) {
+// if (event) {
+// // console.log("Move delta: " + (e.touches[0].pageY - event.touches[0].pageY))
+// player.y = Math.abs(e.touches[0].pageY - event.touches[0].pageY);
+// player.x = Math.abs(e.touches[0].pageX - event.touches[0].pageY);
+//
+// //console.log(e.touches[0].pageX - event.touches[0].pageY);
+//
+// }
+// });
+// document.addEventListener("touched", function (e) {
+// event = null;
+// });
+
+
+
+
 
 
 document.getElementById('display').style.cursor = 'none';
 
 function createMeteorit() {
-    shootCollection[shootCollection.length] = new Shoot('src/Images/Person/shoot.png',player.x,player.y-30);
-    asteroidCollection[asteroidCollection.length] = new Asteroid('src/Images/Asteroid/stone.png',randomInteger(10,800),10);
+    shootCollection[shootCollection.length] = new Shoot('src/Images/Person/shoot.png', player.x, player.y - 30);
+    asteroidCollection[asteroidCollection.length] = new Asteroid('src/Images/Asteroid/stone.png', randomInteger(10, 800), 10);
 }
 
 function randomInteger(min, max) {
@@ -60,18 +82,17 @@ function draw() {
 }
 
 function update() {
-    for(let i=0;i<asteroidCollection.length;i++) {
+    for (let i = 0; i < asteroidCollection.length; i++) {
         asteroidCollection[i].y += asteroidCollection[i].speed;
 
-        for(let j=0; j< shootCollection.length;j++)
-        {
+        for (let j = 0; j < shootCollection.length; j++) {
 
             if (Math.abs(asteroidCollection[i].x + 25 - shootCollection[j].x - 15) < 50 && Math.abs(asteroidCollection[i].y - shootCollection[j].y) < 25) {
                 // console.log('become');
-                shootCollection[j].del =1;
+                shootCollection[j].del = 1;
                 asteroidCollection[i].del = 1;
                 gameStatistic.score++;
-               // document.getElementById('statusPanes').innerHTML = String( gameStatistic.score);
+                // document.getElementById('statusPanes').innerHTML = String( gameStatistic.score);
                 console.log(gameStatistic.score);
                 break;
 
@@ -80,41 +101,54 @@ function update() {
 
         }
 
-        if(asteroidCollection[i].del===1){
-            asteroidCollection = asteroidCollection.slice(0,i).concat(asteroidCollection.slice(i+1,asteroidCollection.length));
+        if (asteroidCollection[i].del === 1) {
+            asteroidCollection = asteroidCollection.slice(0, i).concat(asteroidCollection.slice(i + 1, asteroidCollection.length));
         }
 
 
         // else{
-        //     if(asteroidCollection[i].y<1){
-        //         asteroid.speed = -asteroid.speed;
-        //     }
+        // if(asteroidCollection[i].y<1){
+        // asteroid.speed = -asteroid.speed;
+        // }
         // }
     }
 
 
 
 
-    for(let i = 0;i<shootCollection.length;i++){
+    for (let i = 0; i < shootCollection.length; i++) {
         shootCollection[i].y += shoot.speed;
-        if(shootCollection[i].y<1||shootCollection[i].del===1){
-           shootCollection.splice(i,1);
+        if (shootCollection[i].y < 1 || shootCollection[i].del === 1) {
+            shootCollection.splice(i, 1);
         }
     }
 
-    for(let i=0;i<asteroidCollection.length;i++){
+    for (let i = 0; i < asteroidCollection.length; i++) {
         if (asteroidCollection[i].y > 470) {
-            asteroidCollection = asteroidCollection.slice(0,i).concat(asteroidCollection.slice(i+1,asteroidCollection.length));
+            asteroidCollection = asteroidCollection.slice(0, i).concat(asteroidCollection.slice(i + 1, asteroidCollection.length));
         }
     }
 
-   // for(let i=0;i<asteroidCollection.length;i++)
+    // for(let i=0;i<asteroidCollection.length;i++)
+    //Проверка на столкновение метеорита и корабля
+    for (let i = 0; i < asteroidCollection.length; i++) {
 
+
+        if (Math.abs(asteroidCollection[i].x + 25 - player.x - 15) < 50 && Math.abs(asteroidCollection[i].y - player.y) < 25) {
+            console.log('buuum');
+            gameStatistic.changeHpStatus(-1);
+            asteroidCollection =
+
+                asteroidCollection.slice(0, i).concat(asteroidCollection.slice(i + 1, asteroidCollection.length));
+            break;
+
+        }
+
+    }
 
 
 
 }
-
 
 
 function game() {
@@ -124,20 +158,21 @@ function game() {
 }
 
 
-function render(){
+function render() {
 
-    engine.ctx.drawImage(map.image,0,0,800,600);
+    engine.ctx.drawImage(map.image, 0, 0, 800, 600);
 
-    for(let i in asteroidCollection) {
+    for (let i in asteroidCollection) {
         engine.ctx.drawImage(asteroid.image, asteroidCollection[i].x, asteroidCollection[i].y, 100, 100);
     }
 
-    for(let i in shootCollection){
-        engine.ctx.drawImage(shoot.image,shootCollection[i].x,shootCollection[i].y,100,100);
+    for (let i in shootCollection) {
+        engine.ctx.drawImage(shoot.image, shootCollection[i].x, shootCollection[i].y, 100, 100);
     }
 
-    document.getElementById('statusPanel').innerHTML = gameStatistic.score;
-    engine.ctx.drawImage(player.image,player.x,player.y,100,100);
+    document.getElementById('Score').innerHTML = gameStatistic.score;
+    document.getElementById('HealthStatus').innerHTML = gameStatistic.hp;
+    engine.ctx.drawImage(player.image, player.x, player.y, 100, 100);
 }
 
 map.image.onload = function () {

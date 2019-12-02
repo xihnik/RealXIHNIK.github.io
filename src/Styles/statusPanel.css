@@ -1,12 +1,2 @@
 #statusPanel{
-    width:800px;
-    /*background-color: red;*/
-    height: 5%;
-    position: absolute;
-    top:0;
-    left:50%;
-    background-color:green;
-    border: 2px solid green;
-    color: red;
-    transform: translate(-50%,0%);
 }

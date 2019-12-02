@@ -10,3 +10,210 @@ body{
 #test{
     /*background-color: red;*/
 }
+
+
+.upblock{
+    border          : 30px solid #131313;
+    border-radius   : 10px;
+    color           : #131313;
+    background-color: #131313;
+    width           : 100%;
+    /* display         : table; */
+    /*margin-right    : auto;
+    margin-right    : auto; */
+    border-radius   : 30px;
+    box-shadow      : -2px -2px tomato;
+/* 
+    min-width: 230px;
+
+
+    max-width: 250px; */
+
+min-width : auto;
+min-height: auto;
+max-width : auto;
+max-height: auto;
+
+min-width: 200px;
+max-width: 200px;
+    
+    /* background-size: 110%; */
+}
+
+.lbl_MainMenu{
+        color      : rgb(204, 201, 201);
+    background : transparent;
+    margin-left: 0px;
+    font-size  : larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+        font-size: 250%;
+
+        margin-right: 15%;
+
+    cursor         : pointer;
+    text-decoration: none;
+/* color: tomato; */
+
+    /* color      : rgb(204, 201, 201);
+    background : transparent;
+    margin-left: 0px;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+
+        color: tomato;
+
+        font-size: 200%;
+
+
+    cursor         : pointer;
+    text-decoration: none; */
+}
+
+.lbl_MainMenu{
+    color      : rgb(204, 201, 201);
+}
+.lbl_MainMenu:hover{
+    
+    color: rgb(238, 238, 238);
+}
+.lbl_MainMenu:hover + .Hide_Info{
+    color: rgb(238, 238, 238);
+}
+
+.Hide_Info{
+    color: #131313;
+}
+
+.lbl_Info{
+    color      : rgb(204, 201, 201);
+    background : transparent;
+    margin-left: 0%;
+    /* font-size  : larger; */
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+
+        /* color: tomato; */
+
+        font-size: 200%;
+
+        min-width : 50%;
+min-height: 8%;
+max-width : 10%;
+max-height: 10%;
+    
+    cursor         : pointer;
+    text-decoration: none;
+}
+.lbl_Info:hover{
+    color: rgb(238, 238, 238);
+}
+
+.downblock{
+    border          : 30px solid #131313;
+    border-radius   : 10px;
+    color           : #131313;
+    background-color: #131313;
+    width           : 100%;
+    /* display         : table; */
+    /*margin-right    : auto;*/
+    margin-top    : 10%; 
+    border-radius   : 30px;
+    box-shadow      : -2px 2px tomato;
+/* 
+    min-width: 230px;
+
+
+    max-width: 250px; */
+
+min-width : auto;
+min-height: auto;
+max-width : auto;
+max-height: auto;
+
+min-width: 200px;
+max-width: 200px;
+    
+    /* background-size: 110%; */
+}
+
+
+
+
+
+
+
+.lbl_HP{
+        color      : rgb(204, 201, 201);
+    background : transparent;
+    margin-left: 0px;
+    font-size  : larger;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+        font-size: 250%;
+
+        margin-right: 15%;
+
+    cursor         : pointer;
+    text-decoration: none;
+color: tomato;
+}
+
+.lbl_HP:hover + .Hide_Info{
+    color: tomato;
+}
+
+.Hide_Distance{
+    color: #131313;
+}
+
+.lbl_Distance{
+    color      : rgb(204, 201, 201);
+    background : transparent;
+    margin-left: 0%;
+
+        -webkit-touch-callout: none;
+        -webkit-user-select  : none;
+        -khtml-user-select   : none;
+        -moz-user-select     : none;
+        -ms-user-select      : none;
+        user-select          : none;
+
+
+        font-size: 250%;
+
+        min-width : 50%;
+min-height: 8%;
+max-width : 10%;
+max-height: 10%;
+    
+    cursor         : pointer;
+    text-decoration: none;
+}
+.lbl_Distance:hover{
+    color: rgb(238, 238, 238);
+}
