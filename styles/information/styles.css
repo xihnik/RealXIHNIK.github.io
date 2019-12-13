@@ -52,12 +52,14 @@ body {
 
         margin-right: 15%;
 
-    cursor         : pointer;
-    text-decoration: none;
+    cursor             : pointer;
+    text-decoration    : none;
+    transition-duration: 1000ms;
 }
 
 .lbl_MainMenu:hover{
-    color: rgb(238, 238, 238);
+    color              : rgb(238, 238, 238);
+    transition-duration: 1000ms;
 }
 
 .lbl_Info{
@@ -79,28 +81,31 @@ body {
         font-size: 300%;
 
         min-width : 50%;
-min-height: 8%;
-max-width : 10%;
-max-height: 10%;
+        min-height: 8%;
+        max-width : 10%;
+        max-height: 10%;
     
-    cursor         : pointer;
-    text-decoration: none;
+    cursor             : pointer;
+    text-decoration    : none;
+    transition-duration: 1000ms;
 }
 .lbl_Info:hover{
-    color: tomato;
+    color              : tomato;
+    transition-duration: 1000ms;
 }
 
 .block{
-    border          : 30px solid #131313;
-    border-radius   : 10px;
-    color           : #131313;
-    background-color: #131313;
-    width           : 100%;
+  margin-left     : 8px;
+  margin-top      : 10px;
+  border          : 30px solid #131313;
+  border-radius   : 10px;
+  color           : #131313;
+  background-color: #131313;
     /* display         : table; */
     /*margin-right    : auto;
-    margin-right    : auto; */
-    border-radius   : 30px;
-    box-shadow      : -2px -2px tomato;
+    margin-right : auto; */
+    border-radius: 30px;
+    box-shadow   : -2px -2px tomato;
 /* 
     min-width: 230px;
 
@@ -108,30 +113,29 @@ max-height: 10%;
     max-width: 250px; */
 
 min-width : auto;
-min-height: auto;
+min-height: 100px;
 max-width : auto;
-max-height: auto;
+max-height: 100px;
 
 min-width: 300px;
 max-width: 300px;
-
-    /* display: contents; */
-    /* background-size: 110%; */
 }
 
 #text{
-    color          : #aaaaaa;
-    text-align-last: center;
-    font-size      : x-large;
-    margin-top     : 3%;
+    color              : #aaaaaa;
+    text-align-last    : center;
+    font-size          : 2.0em;
+    margin-top         : 3%;
+    transition-duration: 1000ms;
 }
 
 #text_descriptions{
-    color     : #727272;
-    text-align: center;
-    font-size : 1.2em;
-    margin-top: 2%;
-    word-wrap : break-word;
+    color              : #727272;
+    text-align         : center;
+    font-size          : 1.6em;
+    margin-top         : 2%;
+    word-wrap          : break-word;
+    transition-duration: 1000ms;
 }
 
 #face_enter
@@ -140,24 +144,27 @@ max-width: 300px;
 }
 
 .face{
-    width        : 20%;
+    width        : 23%;
     border-radius: 100px;
     box-shadow   : 0px 2px tomato;
     /* pointer-events: initial;  */
 }
 #face_artur{
+transition-duration: 1000ms;
 /* animation: show_faces_stop 10s linear infinite; */
 }
 
 #face_artur:hover{
-    box-shadow: 0px 2px #727272;
+    box-shadow         : 0px 2px #727272;
+    transition-duration: 1000ms;
   /* animation: show_faces 60s linear infinite; */
 }
 
 #face_artur:active{
-  box-shadow: 0px 2px #727272;
-  pointer-events: none;
-  animation     : show_faces 30s linear infinite;
+  box-shadow         : 0px 2px #727272;
+  pointer-events     : none;
+  animation          : show_faces 30s linear infinite;
+  transition-duration: 1000ms;
 }
 
 /* #face_artur:{
@@ -166,36 +173,44 @@ max-width: 300px;
 
 #face_mark{
     margin-left: 10%;
+
+transition-duration: 1000ms;
 }
 
 #face_mark:hover{
     box-shadow: 0px 2px #727272;
+
+transition-duration: 1000ms;
 }
 
 #face_mark:active{
-  box-shadow: 0px 2px #727272;
-  pointer-events: none;
-  animation     : show_faces 30s linear infinite;
+  box-shadow         : 0px 2px #727272;
+  pointer-events     : none;
+  animation          : show_faces 30s linear infinite;
+  transition-duration: 1000ms;
 }
 
 
 #name_artur{
     width        : 20%;
     text-align   : left;
-    font-size    : 1.2em;
+    font-size    : 1.1em;
     display      : inline-block;
     border-radius: 10%;
     box-shadow   : 0px 1px tomato;
+
+transition-duration: 1000ms;
 }
 
 #name_mark{
-    margin-left  : 10%;
-    width        : 20%;
-    text-align   : left;
-    font-size    : 1.2em;
-    display      : inline-block;
-    border-radius: 10%;
-    box-shadow   : 0px 1px tomato;
+    margin-left        : 13%;
+    width              : 20%;
+    text-align         : left;
+    font-size          : 1.1em;
+    display            : inline-block;
+    border-radius      : 10%;
+    box-shadow         : 0px 1px tomato;
+    transition-duration: 1000ms;
 }
 
 .absolute-bg {
@@ -300,4 +315,82 @@ max-width: 300px;
   100% {
     transform: translate3d(-200vw, 0, 0);
   }
+}
+
+
+.wrapper {
+  color     : #727272;
+  text-align: center;
+  font-size : 1.6em;
+  margin-top: 2%;
+  word-wrap : break-word;
+}
+
+.wave:hover {
+  color            : #999999;
+  -webkit-animation: 0.5s color infinite;
+  animation        : 0.5s color infinite;
+}
+
+@-webkit-keyframes color {
+  50% {
+    color: #8fc8ae;
+  }
+}
+
+@keyframes color {
+  50% {
+    color: #a75f5f;
+  }
+}
+
+.circle{
+
+  border-radius    : 100%;
+
+    cursor               : pointer;
+}
+
+.circle:hover {
+    cursor               : pointer;
+  background       : black;
+  /* border-radius    : 100%; */
+  -webkit-animation: pulsing 2s infinite;
+  animation        : pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.95, 0.95);
+    transform        : scale(0.95, 0.95)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform        : scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.95, 0.95);
+    transform        : scale(0.95, 0.95);
+  }
+}
+
+@keyframes pulsing {
+  0% {
+    -webkit-transform: scale(0.95, 0.95);
+    transform        : scale(0.95, 0.95)
+  }
+  50% {
+    -webkit-transform: scale(1.0, 1.0);
+    transform        : scale(1.0, 1.0);
+  }
+  100% {
+    -webkit-transform: scale(0.95, 0.95);
+    transform        : scale(0.95, 0.95);
+  }
+}
+
+#copyright
+{
+  font-size: 1.2em;
+  color    : blanchedalmond;
 }

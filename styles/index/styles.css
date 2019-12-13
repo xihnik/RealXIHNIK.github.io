@@ -60,10 +60,12 @@ body {
     margin-right: auto;
     
     z-index: 2;
+
+transition-duration: 1000ms;
 }
 
 .btn_StartNow:hover{
-box-shadow: inset 0 0 0 1px #53ea93;
+/* box-shadow: inset 0 0 0 1px #53ea93; */
 color     : tomato;
 }
 
@@ -104,6 +106,8 @@ color     : tomato;
     margin-right: auto;
 
     z-index: 2;
+
+transition-duration: 1000ms;
 }
 
 .btn_Record:hover{
@@ -119,19 +123,19 @@ color     : tomato;
     width           : 100%;
     /* display         : table; */
     /*margin-right    : auto;
-    margin-right    : auto; */
-    border-radius   : 30px;
-    box-shadow      : -2px -2px tomato;
+    margin-right : auto; */
+    border-radius: 30px;
+    box-shadow   : -2px -2px tomato;
 /* 
     min-width: 230px;
 
 
     max-width: 250px; */
 
-min-width : auto;
-min-height: auto;
-max-width : auto;
-max-height: auto;
+min-width : 300px;
+min-height: 100px;
+max-width : 300px;
+max-height: 100px;
 
 min-width: 300px;
 max-width: 300px;
@@ -141,9 +145,9 @@ max-width: 300px;
 
 .lbl_MainMenu{
         color      : rgb(204, 201, 201);
-    background : transparent;
-    margin-left: 0px;
-    font-size  : larger;
+        background : transparent;
+        margin-left: 0px;
+        font-size  : larger;
 
         -webkit-touch-callout: none;
         -webkit-user-select  : none;
@@ -158,7 +162,9 @@ max-width: 300px;
 
     cursor         : pointer;
     text-decoration: none;
-color: tomato;
+    color          : tomato;
+
+    
 
     /* color      : rgb(204, 201, 201);
     background : transparent;
@@ -179,14 +185,19 @@ color: tomato;
 
     cursor         : pointer;
     text-decoration: none; */
+transition-duration: 1000ms;
 }
 
 .lbl_MainMenu:hover + .Hide_Info{
     color: tomato;
+
+transition-duration: 1000ms;
 }
 
 .Hide_Info{
     color: #131313;
+
+transition-duration: 1000ms;
 }
 
 .lbl_Info{
@@ -208,15 +219,19 @@ color: tomato;
         font-size: 300%;
 
         min-width : 50%;
-min-height: 8%;
-max-width : 10%;
-max-height: 10%;
+        min-height: 8%;
+        max-width : 10%;
+        max-height: 10%;
     
     cursor         : pointer;
     text-decoration: none;
+
+transition-duration: 1000ms;
 }
 .lbl_Info:hover{
     color: rgb(238, 238, 238);
+
+transition-duration: 1000ms;
 }
 
 .Hide_Menu{
@@ -237,7 +252,19 @@ max-height: 10%;
         -moz-user-select     : none;
         -ms-user-select      : none;
         user-select          : none;
-    text-decoration: none;
+        text-decoration      : none;
 }
 
 
+
+.btn_StartNow:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(146, 134, 134, 0.19);
+transition-duration: 1000ms;
+    /* transition: 1000px 20s cubic-bezier(0, 0, 1, 1) 500ms; */
+}
+
+.btn_Record:hover {
+  box-shadow: 0 12px 16px 0 rgba(255, 255, 255, 0.24), 0 17px 50px 0 rgba(146, 134, 134, 0.19);
+transition-duration: 1000ms;
+    /* transition: 1000px 20s cubic-bezier(0, 0, 1, 1) 500ms; */
+}

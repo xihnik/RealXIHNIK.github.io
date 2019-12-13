@@ -1,9 +1,12 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Stone Rain</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="styles/information/styles.css" rel="stylesheet" />
-    <!-- <script type="text/javascript" src="scriptjs.js"></script> -->
+    <!-- <link href="scss/information/sstyles.scss" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -23,27 +26,32 @@
 
         <div id="descriptions">
             <div id="text">О игре</div>
-            <div id="text_descriptions">В STONERAIN вы являетесь звездолетом, которому требуется долететь до
-                точки
-                B. У
-                вас будет система жизней, которая дает 3 попытки на полет. Астероиды - (распространённый до 2006
-                года
-                синоним — малые планеты) — относительно небольшие небесные тела Солнечной системы,
-                движущееся по орбите вокруг Солнца и именно они и будут представлять вам серьезную опасность!
+            <div class="wrapper">
+                <div id="text_descriptions" class="wrapper texts">В STONERAIN вы
+                    управляете звездолетом, которому
+                    требуется
+                    долететь до
+                    конечной. У
+                    вас будет система жизней, которая дает 3 попытки на полет. Астероиды - (распространённый до 2006
+                    года
+                    синоним — малые планеты) — относительно небольшие небесные тела Солнечной системы,
+                    движущееся по орбите вокруг Солнца и именно они и будут представлять вам серьезную опасность!
+                </div>
             </div>
         </div>
-
         <div id="about">
             <div id="text">Игра создана разработчиками</textarea>
                 <div id="face_enter"></div>
                 <div class="names" id="face_enter"></div>
-                <img id="face_artur" class="face" src="images/artur_face.jpg" alt="">
-                <img id="face_mark" class="face" src="images/mark1_face.jpg" alt="">
+                <img id="face_artur" class="face circle" src="images/artur_face.jpg" alt="">
+                <img id="face_mark" class="face circle" src="images/mark1_face.jpg" alt="">
                 <div></div>
                 <div id="name_artur">Artur</div>
                 <div id="name_mark">Mark</div>
             </div>
         </div>
+        <div id="copyright">©StoneRain</div>
+        <script type="text/javascript" src="js/information/scriptjs.js"></script>
 </body>
 
 </html>

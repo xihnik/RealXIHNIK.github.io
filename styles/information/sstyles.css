@@ -1,0 +1,33 @@
+.nice_texts {
+  top: 50%;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-50%);
+  font-family: "Oswald", sans-serif;
+  line-height: 60px;
+}
+.nice_texts span {
+  color: #fff;
+  font-size: 70px;
+  font-weight: bold;
+  display: inline-block;
+  letter-spacing: 5px;
+  transition: 2s;
+  text-shadow: 0px 0px 0px #558b2f;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  cursor: default;
+}
+.nice_texts span:hover {
+  text-shadow: -8px 8px 0px #558b2f;
+  transition: 0.3s;
+  top: -8px;
+  left: 8px;
+}
+.nice_texts span.space {
+  width: 20px;
+  height: 100%;
+}

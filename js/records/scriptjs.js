@@ -11,6 +11,7 @@ function waitForLoad(id, callback) {
 }
 
 waitForLoad("table_records", function () {
+
     function add_row() {
         var x = document.getElementById("table_records");
         var row = x.insertRow();
@@ -18,16 +19,16 @@ waitForLoad("table_records", function () {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
 
-        cell1.innerHTML = "Artur" + artur_id;
-        cell2.innerHTML = "" + artur_distance_id;
+        cell1.innerHTML = localStorage.getItem('nickname');
+        cell2.innerHTML = localStorage.getItem('time');
 
         artur_id++;
         artur_distance_id++;
     }
     add_row();
-    add_row();
-    add_row();
-    add_row();
-    add_row();
-    add_row();
+    // add_row();
+    // add_row();
+    // add_row();
+    // add_row();
+    // add_row();
 });
